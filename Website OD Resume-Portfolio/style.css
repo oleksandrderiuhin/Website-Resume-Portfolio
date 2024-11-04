@@ -26,9 +26,8 @@
     align-items: center; 
     padding: 10px;
     margin-top: 20px;
-    /* background: rgb(77, 108, 219); Полупрозрачный темный фон  */
-    border: 2px solid #6E07F3;
-    border-radius: 46px;
+    /* border: 2px solid #6E07F3;
+    border-radius: 46px; */
     backdrop-filter: blur(10px); /* Эффект размытия */
   }
   
@@ -69,7 +68,7 @@
   /* Ссылки навигации */
   .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
   }
   
@@ -105,6 +104,7 @@
     font-style: italic;
     font-weight: normal;
     font-size:  18px;
+    padding-top: 10px;
 
   }
 
@@ -262,7 +262,7 @@
     display: flex;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
-    padding-top: 250px;
+    padding-top: 280px;
     width: 40%;
     background-color:#6E07F3;
     color: #fff;
@@ -434,6 +434,10 @@
     font-size: 18.28px;
 }
 
+.link-let-do-one{
+  color: white;
+}
+
 .link-let-do:hover{
     background-color: #5be9b9;
     color:#000000;
@@ -498,19 +502,34 @@ border-radius: 50%;
 transition: background-color 0.3s, transform 0.2s
 }
 
-.social-linked{
-display: inline-flex;
-justify-content: center;
-align-items: center;
-width: 50px;
-height: 50px;
-border: 2px solid #fff;
-border-radius: 50%;
-transition: background-color 0.3s, transform 0.2s
-}
 
 .social-link:hover{
-    border: 2px solid orange;
+    border: 2px solid #ffa500;
+}
+
+.social-link:hover .icon-social-one{
+  content: url("tabler-icon-brand-behance-orange.svg");
+
+}
+
+.social-link:hover .icon-social-two{
+  content: url("tabler-icon-brand-git-orange.svg");
+
+}
+
+.social-link:hover .icon-social-three{
+  content: url("tabler-icon-file-cv-orange.svg");
+
+}
+
+.social-link:hover .icon-social-four{
+  content: url("tabler-icon-brand-telegram-orange.svg");
+
+}
+
+.social-link:hover .icon-social-five{
+  content: url("tabler-icon-brand-linkedin-orange.svg");
+
 }
 
 .social-link img{
@@ -520,8 +539,6 @@ transition: background-color 0.3s, transform 0.2s
     
 }
 
-
-
 .copyright-text{
     display: flex;
     justify-content: center;
@@ -529,6 +546,11 @@ transition: background-color 0.3s, transform 0.2s
     margin-top: 100px;
 
     font-family: "Montserrat", sans-serif;  
+}
+
+.copyright-icon{
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 
