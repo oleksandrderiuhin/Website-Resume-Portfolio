@@ -20,10 +20,10 @@
             <div class="home-icon">/</div>
           </div>
           <nav class="nav-links">
-            <a href="#about" class="nav-link">About</a>
-            <a href="#educations" class="nav-link">Educations</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#about" class="nav-link" id="aboutmeText">About</a>
+            <a href="#educations" class="nav-link" id="educationText">Educations</a>
+            <a href="#skills" class="nav-link" id="skillsText">Skills</a>
+            <a href="#contact" class="nav-link" id="contactmeText">Contact</a>
           </nav>
         </div>
 </header>
@@ -35,10 +35,10 @@
     </div>
 
     <div class="profile-container">
-        <img src="avatar-oleksandr2.jpg" alt="Profile Photo" class="profile-photo">
+        <img src="avatar-oleksandr.jpg" alt="Profile Photo" class="profile-photo">
     </div>
 
-    <div class="about-me">
+    <div class="about-me" data-scroll-to="aboutme-container">
         <h2 class="hi-oleksandr">Hi, I’m Oleksandr. Nice to meet you.</h2>
         <p class="text-about-me">Since beginning my journey as a freelance designer 12 years ago, I've done remote work<br> 
           for agencies, consulted for startups, and collaborated with talented people to create<br>
@@ -46,7 +46,7 @@
           curious, and perpetually working on improving my chops.</p>
     </div>
 
-    <div class="container">
+    <div class="container" data-scroll-to="skills-container">
         <div class="column">
             <img src="free-icon-graphic-design-2915640.png" class="icon">
             <h2 class="header">Designer</h2> <!-- Заголовок -->
@@ -81,48 +81,49 @@
         </div>
     </div>
 
-    <div class="container-one">
-    <div class="switches">
-        <h3 class="switch">Educations</h3>
-        <h3 class="switch">Certificates</h3>
-    </div>
-    <div class="content-group" id="top">
-      <div id="education" class="content">
-        <h2 id="display-text">Collegium Da Vinci</h2>
-        <p class="facultet">Computer Technologies Game Dev / 3D Artist</p>
-        <p class="years">Oct 2019 - Dec 2023</p>
-        <br>
-        <h2 id="display-text">POLITECHNIKA SWIETOKRZYSKA</h2>
-        <p class="facultet">Industrial Designer</p>
-        <p class="years">Oct 2018 - May 2019</p>
-      </div> 
 
-      <div id="certificates" class="content">
-        <h2 id="display-text">Hillel UI/UX Designer Pro</h2>
-        <p class="facultet">Oct 2023-Feb 2024</p>
-        <a href="" class="link">Link to certificate</a>
-        <p></p>
-        <br>
-        <h2 id="display-text">Udemy UX/UI Designer</h2>
-        <p class="facultet">Jan 2023-Feb 2023</p>
-        <a href="" color="link">Link to certificate</a>
-      </div>
-    </div>
-    </div>
 
+  <div class="switch-container" data-scroll-to="educations-container">
+      <button id="oneWay" class="switch-button active" onclick="showText('oneWay')">Educations</button>
+      <button id="return" class="switch-button" onclick="showText('return')">Certificates</button>
+  </div>
+  <div class="content-container">
+    <div id="oneWayText" class="text-content">
+      <h2 class="univ">Collegium Da Vinci</h2>
+      <p class="fakultet">Computer Technologies Game Dev / 3D Artist</p>
+      <p class="years">Oct 2019 - Dec 2023</p>
+      <br>
+      <h2 class="univ">POLITECHNIKA SWIETOKRZYSKA</h2>
+      <p class="fakultet">Industrial Designer</p>
+      <p class="years">Oct 2018 - May 2019</p>
+    </div>
+    <div id="returnText" class="text-content hidden">
+      <h2 class="univ">Hillel UI/UX Designer Pro</h2>
+      <p class="fakultet">Oct 2023-Feb 2024</p>
+      <a href="https://certificate.ithillel.ua/view/91410389" class="link-cer">Link to certificate</a>
+      <br>
+      <h2 class="univ">Udemy UX/UI Designer</h2>
+      <p class="fakultet">Jan 2023-Feb 2023</p>
+      <a href="https://www.udemy.com/certificate/UC-abc9fce5-234d-4dc1-aeda-f705d23d9427/?fbclid=IwZXh0bgNhZW0CMTEAAR3Xm9YwDQtFhgt-bOEo7LaHd4bjid6VoaEiYlc8x22wPL6m2LB7whUGcpA_aem_AWCj2TCmeZL6zM1bRoGxW88vHGQMDk_YGmQIb-arYRZmTXxxokXZbZL-nqlPFB3Jwz0BuzovSaloeOwD1g_Ly0a7" class="link-cer">Link to certificate</a>
+    </div>
+  </div>
+
+  
     <div class="collaborate">
         <h4 class="interested">Interested in collaborating with me?</h4>
         <p class="des-coll">I’m always open to discussing product design work or partnership opportunities.</p>
+        <a href="https://t.me/ironinv23" style="text-decoration: none;">
         <div class="col-with-me">
             <button class="col-button">
               <img src="tabler-icon-message.svg" alt="Profile Photo" class="icon-chat">
               <span class="button-text">Start a conversation</span>
             </button>
         </div> 
+        </a>
     </div>
 
 
-    <div class="backgroundshadow">
+    <div class="backgroundshadow" data-scroll-to="contactme-container">
           <div class="heading-1">Start a project</div>
         <div class="interested-in-working-container">
           <span class="interested-in-working-container1">
@@ -174,7 +175,7 @@
     
 
     
- 
+ <script src="js/javascript.js"></script>
   	
 </body>
 </html>

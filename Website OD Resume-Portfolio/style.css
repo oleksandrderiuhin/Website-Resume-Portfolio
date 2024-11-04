@@ -89,11 +89,13 @@
     margin-top: 100px;
     color: #fff;
     max-width: 800px;
+    font-size: 16px;
   } 
 
   .first-title{
     color: black;
     font-family: "Montserrat", sans-serif;
+    font-size:em;
 
 
   }
@@ -248,60 +250,96 @@
   
 }
 
-.container-one {
-    display: flex;
-    /* border-radius: 10px; */
-    margin-top: 175px;
-    overflow: hidden;
-    width: 1440px;
-    height: 700px;
-   
-  }
-  
-   .switches {
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", sans-serif;
-    padding-top: 280px;
-    width: 40%;
-    background-color:#6E07F3;
-    color: #fff;
-  }
-  
-  .switch {
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .switch:hover {
-    background-color: white;
-    color: #000000;
-  }
-  
-  .content-group {
-    padding: 20px;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #display-text {
-    font-size: 24px;
-    color: #333;
-  } 
-  
-  .facultet{
-   color: #6E07F3;
-  }
 
-  .years{
-    color: #333;
 
-  }
+.switch-container {
+  display: flex;
+  width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 175px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.switch-button {
+  font-family: "Montserrat", sans-serif;
+  font-weight:normal;
+  font-size:  18px;
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.switch-button.active {
+  font-family: "Montserrat", sans-serif;
+  font-weight:normal;
+  font-size:  18px;
+  background-color: #6E07F3;
+  color: white;
+}
+
+.switch-button:not(.active) {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.content-container {
+  margin-top:60px;
+}
+
+.text-content {
+  font-size: 16px;
+  color:#000000;
+  display: none;
+  text-align: center;
+}
+
+.text-content.hidden {
+  display: none;
+  padding-top:10px;
+}
+
+.text-content:not(.hidden) {
+  display: block;
+}
+
+.univ{
+  font-family: "Montserrat", sans-serif;
+  font-weight:bold;
+  font-size:  24px;
+  color: #6E07F3;
+  padding-top: 10px; 
+  
+}
+
+.fakultet{
+  font-family: "Montserrat", sans-serif;
+  font-weight:normal;
+  font-size:  18px;
+  padding-top: 10px;
+
+}
+
+.years{
+  font-family: "Montserrat", sans-serif;
+  font-weight:normal;
+  font-size:  14px;
+  padding-top: 10px;
+  
+}
+
+.link-cer{
+  font-family: "Montserrat", sans-serif;
+  font-weight:normal;
+  font-size:  14px;
+  padding-bottom: 20px;
+}
+
+
 
   .collaborate{
     margin-top: 150px;
@@ -552,6 +590,21 @@ transition: background-color 0.3s, transform 0.2s
   padding-left: 7px;
   padding-right: 7px;
 }
+
+
+@media (max-width: 1920px){
+ .about-me{
+   width: 1920px;
+ }
+
+ /* .container-one{
+  width: 1920px;
+ } */
+
+ .footer-site{
+  width: 1920px;
+ }
+} 
 
 
 
